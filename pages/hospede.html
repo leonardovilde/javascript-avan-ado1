@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Novo hospede</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="nome"
+                class="label-control">Informe o nome</label>
+                <input type="text" id="nome" placeholder="EX: ana" class="form-control"/>
+            </div>
+            <div class="col-md-6">
+                <label for="email"
+                class="label-control">Informe o Email</label>
+                <input type="text" id="email" placeholder="EX: ana@gmail.com" class="form-control"/>
+            </div>
+            <div class="col-md-3">
+            <label for="cep"
+            class="label-control">Informe seu CEP</label>
+            <input type="text" id="cep" placeholder="EX: 89012-250" class="form-control"/>
+        </div>
+        <div class="col-md-6">
+            <label for="rua"
+            class="label-control">Informe a sua Rua</label>
+            <input type="text" id="rua" placeholder="EX: Rua Rio Dos Cedros" class="form-control"/>
+        </div>
+        <div class="col-md-2">
+            <label for="numero"
+            class="label-control">Informe o Numero</label>
+            <input type="number" id="numero" placeholder="EX: 62" class="form-control"/>
+        </div>
+        <div class="col-md-6">
+            <label for="bairro"
+            class="label-control">Informe o seu Bairro</label>
+            <input type="text" id="bairro" placeholder="EX: Boa Vista" class="form-control"/>
+        </div>
+        <div class="col-md-6">
+            <label for="cidade"
+            class="label-control">Informe a sua Cidade</label>
+            <input type="text" id="cidade" placeholder="EX: Blumenau" class="form-control"/>
+        </div>
+        <div class="col-md-6">
+            <label for="estado"
+            class="label-control">Informe o Estado(UF)</label>
+            <input type="text" id="estado" placeholder="EX: Santa Catarina (SC)" class="form-control"/>
+        </div>
+    </div>
+        <div class="col-md-6 mt-3">
+            <button class="btn btn-outline-primary" id="btnSalvar">Gravar</button>
+            <button class="btn btn-outline-secondary">Cancelar</button>
+        </div>
+        <div>
+            <table class="table table-stripped">
+                <thead>
+                    <tr>
+                        <th>nome</th>
+                        <th>Email</th>
+                        <th>Cep</th>
+                        <th>Rua</th>
+                        <th>Numero</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <!-- preencher via script -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./scripts/hospedes.js"></script>
+</body>
+</html>
